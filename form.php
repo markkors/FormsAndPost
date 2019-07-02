@@ -20,7 +20,25 @@
     <title>formulier</title>
 
     <style>
-        .table {display: table;}
+        header {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 50px;
+
+        }
+
+        .table {
+            display: table;
+        }
         .table-row {display: table-row;}
         .table-cell {
             display: table-cell;
@@ -31,22 +49,33 @@
 </head>
 <body>
 
-<form method="post">
-    <div class="table">
-        <div class="table-row">
-            <div class="table-cell">voornaam</div>
-            <div class="table-cell"><input type="text" name="first"></div>
-        </div>
-        <div class="table-row">
-            <div class="table-cell">achternaam</div>
-            <div class="table-cell"><input type="text" name="last"></div>
-        </div>
-        <div class="table-row">
-            <div class="table-cell"><input type="submit" name="submit" value="submit"></div>
-            <div class="table-cell"></div>
-        </div>
-    </div>
-</form>
+<header>
+    <h1>Prijzenfestival</h1>
+</header>
+<main>
+    <form method="post">
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">voornaam</div>
+                <div class="table-cell"><input type="text" name="first"></div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">achternaam</div>
+                <div class="table-cell"><input type="text" name="last"></div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">leeftijd</div>
+                <div class="table-cell"><input type="number" name="age"></div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell"><input type="submit" name="submit" value="verstuur"></div>
+                <div class="table-cell"></div>
+            </div>
 
+        </div>
+
+    </form>
+
+</main>
 </body>
 </html>
